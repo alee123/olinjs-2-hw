@@ -5,7 +5,7 @@ var Cat = require('../models/cat')
 // listing all the users
 exports.list = function(req, res){
   // get the list of users
-  var cats = Cat.find({}, function (err, docs) {
+  var cats = Cat.find({}).sort('-age').exec(function (err, docs) {
     if (err)
       return console.log("error", cats);
     // send it back

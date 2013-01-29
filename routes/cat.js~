@@ -9,7 +9,7 @@ exports.list = function(req, res){
     if (err)
       return console.log("error", cats);
     // send it back
-    res.render('cats', {cats: docs, title: 'My First app'});
+    res.render('cats', {cats: docs, title: "Amanda's cat app"});
   });
 };
 
