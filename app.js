@@ -36,7 +36,7 @@ app.get('/users', user.list);
 app.get('/cats', cat.list);
 app.get('/cats/new', cat.create);
 app.get('/cats/delete/old', cat.delete);
-app.get('/cats/colors/:color', cat.color);
+app.get('/cats/color/:color', cat.color);
 
 
 
